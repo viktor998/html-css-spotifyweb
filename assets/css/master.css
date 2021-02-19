@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    
+}
+
+
+/* --------NAVIGATION SIDEBAR-------- */
+.container-flex{
+    display: flex;
+}
+
+.container-flex.col{
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-flex.row{
+    flex-direction: row;
+ 
+}
+
+.container-flex.col.sidebar{
+    position: relative;
+    z-index: 1;
+    width: 48px;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);   
+}
+
+.container-flex.row.topbar{
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0 ;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.95);   
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container-flex.row.bottombar{
+    width: 100vw;
+    position: fixed;
+    z-index: 2;
+    bottom: 0;
+    left: 0 ;
+    height: 90px;
+    background-color: rgb(46, 46, 46);   
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.brand-logo i{
+    color: white;
+    font-size: 32px;
+}
+
+
+a img{
+    height: 28px;
+}
+
+a.bottom img{
+    height: 17px;
+}
+
+a.bottom-profile img{
+    border-radius: 50%;
+}
+
+.container-flex.col.bottom.btns{
+
+    justify-content: flex-end;
+}
+
+a.bottom-profile{
+    margin-bottom: 80px;
+}
+
+button.upgrade{
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    padding: 5px 20px;
+    font-size: 12px;
+}
+
+
+/* --------NAVIGATION SIDEBAR-------- */
+
+/* --------UTILITY-------- */
+.margin-top{
+    margin-top: .5em;
+}
+
+.margin-top-1{
+    margin-top: 1em;
+}
+
+.margin-bottom-1{
+    margin-bottom: 1em;
+}
+
+.margin-right{
+    margin-right: .5em;
+}
+
+.txt-upper{
+    text-transform: uppercase;
+}
+
+.txt-bold{
+    font-weight: bold;
+}
+
+/* --------UTILITY-------- */
