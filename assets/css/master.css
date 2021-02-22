@@ -36,6 +36,7 @@
 .container-flex.row.topbar{
     width: 100vw;
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0 ;
     height: 70px;
@@ -72,6 +73,34 @@ a span.label.active{
     color: white;
 }
 
+.playlist{
+    color: white;
+    padding-left: 35px;
+    line-height: 2;
+    display: none;
+}
+
+.playlist .create i{
+    font-size: 40px;
+    padding-right: 10px;
+}
+
+.playlist .create a{
+    display: flex;
+    align-items: center;
+    color: rgb(118, 120, 125);
+}
+
+.playlist .create ul li{
+    list-style: none;
+    line-height: 3;
+}
+
+.playlist .create ul li a{
+    font-size: 12px;
+}
+
+
 a.bottom img{
     height: 14px;
 }
@@ -105,11 +134,11 @@ button.upgrade{
 
 .bg-blue{
     background-color: rgb(20, 25, 34);
- 
+    overflow-y: auto;   
     width: 100%;
     margin-top: 70px;
     height: calc(100vh - 160px);
-    overflow-y: auto;
+    
 }
 
 .nav-sections{
@@ -117,13 +146,14 @@ button.upgrade{
     max-width: 356px;
     display: flex;
     flex-wrap: wrap;
-    align-items: space-around;
+    text-align: center;
     margin: 0 auto;
 }
 
 .main-nav .nav-sections a{
     text-decoration: none;
     padding: 0 5px;
+    justify-content: center;
     margin: 0 auto;
     margin-bottom: 20px;
 }
@@ -150,28 +180,54 @@ hr.active{
     margin: 0 auto;
 }
 
-.recently-played{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
-    margin: 0 auto;
-    
+.container-flex.row.center{
+    justify-content: center;
 }
 
-.album-content{
-    display: flex;
-    width: 100%;
-    margin-bottom: 30px;
-    justify-content: space-around;
-   
+.txt-recently h1{
+    font-size: 25px;
 }
+
+
+
+.album-content{
+    width: 100%;
+    max-width: 356px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.album-content.artisti .album-card img{
+    border-radius: 50%;
+}
+
 .album-content p{
     text-align: center;
     color: white;
     padding-top: 10px;
+}
 
+.album-card{
+    margin-bottom: 10px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.album-card:hover{
+    cursor: pointer;
+}
+
+.album-card:hover:after {
+    content: '\f04b';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .album-card img{
@@ -179,17 +235,12 @@ hr.active{
     height: 150px;
 }
 
-.album-card {  
-    display: flex;
-    flex-direction: column;
-    
-    
-}
+
 
 .container-flex.row.bottombar{
     width: 100vw;
     position: fixed;
-    z-index: 2;
+    z-index: 1;
     bottom: 0;
     left: 0 ;
     height: 90px;
@@ -336,14 +387,14 @@ span.album-description p{
         margin-left: 20px;
         height: 28px;
     }
+    .playlist{
+        
+        display: block;
+    }
 
     .container-flex.col.bottom.btns{
         justify-content: flex-end;
         align-items: flex-start;
-    }
-
-    a.bottom{
-        width: 16px;
     }
 
     a.bottom + hr{
@@ -386,12 +437,87 @@ span.album-description p{
         font-size: 14px; 
     }
 
+    .recently-played{
+        margin: 0 auto;
+    }
 
+    .album-content{
+        max-width: 521px;
+       
+    }
 
     .album-card img{
         width: 200px;
         height: 200px;
     }
+
+    .album img{
+        height: 40px;
+    }
+
+    span.album-description p{
+        font-size: 14px;
+    }
+
+    .heart-file-icon a i{
+        padding-left: 10px;
+        font-size: 16px;
+    }
+
+    .player-controller a i{
+        padding: 0 20px;
+        font-size: 18px;
+    }
+
+    .volume a i{
+        font-size: 14px;
+        padding: 0 5px;
+    }
+
+}
+
+@media all and (min-width: 992px){
+    .nav-sections{
+        max-width: 565px;
+    }
+
+    .album-content{
+        align-self: center;
+        max-width: 721px;
+    }
+
+    .album-card{
+        margin: 0 15px;
+    }
+
+    .album-card img{
+        width: 150px;
+        height: 150px;
+    }
+
+ 
+}
+
+@media all and (min-width: 1163px){
+    .nav-sections{
+        max-width: 800px;
+    }
+
+    .album-content{
+        align-self: center;
+        max-width: 1163px;
+    }
+
+    .album-card{
+        margin: 0 15px;
+    }
+
+    .album-card img{
+        width: 150px;
+        height: 150px;
+    }
+
+ 
 }
 
 /* --------UTILITY-------- */
