@@ -11,31 +11,7 @@
 <body>
 <!------------ HEADER ------------>
     <header>
-        <nav class="container-flex col sidebar">
-          
-            <div class="brand-logo margin-top">
-                <i  class="fab fa-spotify "></i>
-            </div>
-            <a class="margin-top-1" href="">
-                <img src="./assets/img/svgexport-5.svg" alt="">
-            </a>
-            <a href="">
-                <img src="./assets/img/svgexport-6.svg" alt="">
-            </a>
-            <a href="">
-                <img src="./assets/img/svgexport-8.svg" alt="">
-            </a>
-            <div class="container-flex col sidebar bottom btns margin-bottom-1">
-                <a class="bottom" href="">
-                    <img src="./assets/img/svgexport-12.svg" alt="">
-                </a>
-    
-                <a class="bottom-profile margin-top" href="">
-                    <img src="https://scontent.flux1-1.fna.fbcdn.net/v/t1.30497-1/c94.0.320.320a/p320x320/84628273_176159830277856_972693363922829312_n.jpg?_nc_cat=1&ccb=3&_nc_sid=0c64ff&_nc_ohc=TK-2Pfx722IAX_FXV9a&_nc_ht=scontent.flux1-1.fna&tp=27&oh=7b067f08f9f576d7b9581c388534e456&oe=6055C58A" alt="">
-                </a>
-            </div>
-        </nav>
-
+        <!-- TOPBAR -->
         <div class="container-flex row topbar">
             <button class="txt-upper upgrade txt-bold margin-right" name="upgrade">effettua l'upgrade</button>
         </div>
@@ -44,6 +20,167 @@
 
 <!------------ MAIN ------------>
     <main>
+<!-- SIDEBAR -->
+        <div class="container-flex row">
+            <nav class="container-flex col media sidebar">
+          
+                <div class="brand-logo margin-top-1">
+                    <i  class="fab fa-spotify "></i>
+                    <img  style="height: 40px;" src="./assets/img/Spotify.svg" alt="">
+                </div>
+                <a class="margin-top-1" href="">
+                    <img  src="./assets/img/svgexport-5.svg" alt="">
+                    <span class="label active">Home</span>
+                </a>
+                <a href="">
+                    <img  src="./assets/img/svgexport-6.svg" alt="">
+                    <span class="label">Cerca</span>
+                </a>
+                <a href="">
+                    <img src="./assets/img/svgexport-8.svg" alt="">
+                    <span class="label">La tua libreria</span>
+                </a>
+                <div class="container-flex col sidebar bottom btns margin-bottom-1">
+                    <a class="bottom" href="">
+                        <img src="./assets/img/svgexport-12.svg" alt="">
+                        <span style="padding-left: 15px;" class="label ">Installa app</span>
+                    </a>
+                    <hr>
+                    
+
+                    <a class="bottom-profile margin-top" href="">
+                        <img src="https://scontent.flux1-1.fna.fbcdn.net/v/t1.30497-1/c94.0.320.320a/p320x320/84628273_176159830277856_972693363922829312_n.jpg?_nc_cat=1&ccb=3&_nc_sid=0c64ff&_nc_ohc=TK-2Pfx722IAX_FXV9a&_nc_ht=scontent.flux1-1.fna&tp=27&oh=7b067f08f9f576d7b9581c388534e456&oe=6055C58A" alt="">
+                        <span class="label active">John Doe</span>
+                    </a>
+                </div>
+    
+                
+            </nav>
+            <div class="main-nav bg-blue ">
+                <div class="nav-sections margin-top-2">
+                    <a  href="">
+                        <p>in evidenza</p>
+                        <hr class="active">
+                    </a>
+                    <a href="">
+                        <p>podcast</p>
+                    </a>
+                    <a href="">
+                        <p>classifiche</p>
+                    </a>
+                    <a href="">
+                        <p>generi e mood</p>
+                    </a>
+                    
+                    <a class="auto" href="">
+                        <p>nuove uscite</p>
+                    </a>
+                    <a class="auto-2" href="">
+                        <p>scopri</p>
+                    </a>
+                </div>
+
+                <!-- RECENTLY PLAYED -->
+                <div class="txt-recently">
+                    <h1 style="color: white; padding:20px 10px; font-size: 20px;">Recently played</h1>
+
+                </div>
+               <div class="container-flex row">
+                
+                <div class="recently-played">
+                   <div class="album-content">
+                        <div class="album-card">
+                            <img src="https://source.unsplash.com/900x900/?music,stereo" alt="">
+                            <p>Song</p>
+                        </div>
+                        
+                        <div class="album-card">
+                            <img src="https://source.unsplash.com/900x900/?music,album" alt="">
+                            <p>Album</p>
+                            <span style="text-align: center; color: rgb(118, 120, 125); font-size: 10px;">Song</span>
+                        </div>
+                        
+                    </div>
+
+                    <div class="album-content">
+                        <div class="album-card">
+                            <img src="https://source.unsplash.com/1000x900/?headphones" alt="">
+                            <p>Song</p>
+                        </div>
+                        
+                        <div class="album-card">
+                            <img src="https://source.unsplash.com/900x900/?music,radio" alt="">
+                            <p>Song</p>
+                        </div>
+                    </div>
+
+                    <div class="album-content">
+                        <div class="album-card">
+                            <img src="https://source.unsplash.com/500x500/?music,guitar" alt="">
+                            <p>Song</p>
+                        </div>
+                        
+                        <div class="album-card">
+                            <img src="https://source.unsplash.com/900x900/?music,disco" alt="">
+                            <p>Song</p>
+                        </div>
+                    </div>
+
+                    <div class="album-content">
+                        <div class="album-card">
+                            <img src="https://source.unsplash.com/900x900/?music,cd" alt="">
+                            <p>Song</p>
+                        </div>
+                        
+                        <div class="album-card">
+                            <img src="https://source.unsplash.com/900x900/?michael jackson,thriller" alt="">
+                            <p>Song</p>
+                        </div>
+                    </div>
+
+                    <div class="album-content">
+                        <div class="album-card">
+                            <img src="https://source.unsplash.com/1300x900/?music,cd" alt="">
+                            <p>Song</p>
+                        </div>
+                        
+                        <div class="album-card">
+                            <img src="https://source.unsplash.com/900x500/?michael jackson,thriller" alt="">
+                            <p>Song</p>
+                        </div>
+                    </div>
+
+                    <div class="album-content">
+                        <div class="album-card">
+                            <img src="https://source.unsplash.com/950x720/?music,cd" alt="">
+                            <p>Song</p>
+                        </div>
+                        
+                        <div class="album-card">
+                            <img src="https://source.unsplash.com/350x300/?thriller" alt="">
+                            <p>Song</p>
+                        </div>
+                    </div>
+
+                    <div class="album-content">
+                        <div class="album-card">
+                            <img src="https://source.unsplash.com/600x420/?music,cd" alt="">
+                            <p>Song</p>
+                        </div>
+                        
+                        <div class="album-card">
+                            <img src="https://source.unsplash.com/650x400/?michael jackson,thriller" alt="">
+                            <p>Song</p>
+                        </div>
+                    </div>
+    
+                    
+                  
+               </div>
+               
+            </div>
+        </div>
+
         
     </main>
 <!------------ MAIN ------------>
@@ -51,6 +188,38 @@
 <!------------ FOOTER ------------>
     <footer>
         <div class="container-flex row bottombar">
+           <div class="album margin-left">
+               <img src="https://i.scdn.co/image/ab67616d00004851072e9faef2ef7b6db63834a3" alt="Title: Sicko Mode">
+               <span class="album-description">
+                   <p class="heart">Sinister</p>
+                   <p class="file" style="color: grey;">brano</p>
+               </span>
+               <div class="heart-file-icon">
+                   <a href=""><i class="far fa-heart"></i></a>
+                   <a href=""><i class="far fa-folder"></i></a>   
+               </div>
+           </div>
+           <div class="controller">
+                <div class="player-controller margin-bottom-1">
+                    <a href=""><i class="fas fa-random"></i></a>
+                    <a href=""><i class="fas fa-step-backward"></i></a>
+                    <a class="play" href=""><i style="font-size: 30px;" class="far fa-play-circle"></i></a>
+                    <a href=""><i class="fas fa-step-forward"></i></a>
+                    <a href=""><i class="fas fa-redo-alt"></i></a>
+                </div>
+                <div class="play-bar">
+                    <p class="bar">0:25</p>
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    <p>4:35</p>
+                </div>
+           </div>
+
+           <div class="volume">
+               <a href=""> <i class="fas fa-bars"></i></a>
+               <a href=""><i class="fas fa-desktop"></i></a>
+               <a href=""><i class="fas fa-volume-up"></i></a>        
+               <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+           </div>
            
         </div>
     </footer>
