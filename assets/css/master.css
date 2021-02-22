@@ -1,11 +1,17 @@
 @import url(//db.onlinewebfonts.com/c/01173b246d9d9ea808ea75a26b3b61bb?family=Circular+Spotify+Tx+T+Black);
 
-*{
+
+
+*{  
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 14px;
     font-family: "Circular Spotify Tx T Black";
+}
+
+body{
+    overflow: hidden;
 }
 
 /* SCREEN 381px */
@@ -505,8 +511,9 @@ span.album-description p{
 
     .album-content{
         align-self: center;
-        max-width: 1163px;
+        max-width: 1999px;
     }
+
 
     .album-card{
         margin: 0 15px;
