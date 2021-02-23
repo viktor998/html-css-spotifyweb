@@ -14,6 +14,10 @@ body{
     overflow: hidden;
 }
 
+nav a span:hover{
+    color: white;
+}
+
 /* SCREEN 381px */
 
 /* --------NAVIGATION BAR'S-------- */
@@ -36,7 +40,9 @@ body{
     z-index: 1;
     width: 48px;
     height: 100vh;
+  
     background-color: rgb(0, 0, 0);   
+    
 }
 
 .container-flex.row.topbar{
@@ -55,16 +61,24 @@ body{
 .brand-logo i{
     color: white;
     font-size: 27px;
+    
 }
 
 .brand-logo img{
     display: none;
-    padding-left: 20px;
+    padding-left: 30px;
 }
+
 
 nav a{
     text-decoration: none;
+    padding: 5px 2px;
 }
+
+nav a span:hover{
+    color: white;
+}
+
 
 a img{
     height: 22px;
@@ -82,7 +96,6 @@ a span.label.active{
 .playlist{
     color: white;
     padding-left: 35px;
-    line-height: 2;
     display: none;
 }
 
@@ -92,14 +105,21 @@ a span.label.active{
 }
 
 .playlist .create a{
+   
     display: flex;
     align-items: center;
     color: rgb(118, 120, 125);
 }
 
+.playlist .create a:hover{
+    
+    color: white;
+}
+
+
 .playlist .create ul li{
     list-style: none;
-    line-height: 3;
+    
 }
 
 .playlist .create ul li a{
@@ -169,6 +189,10 @@ button.upgrade{
     font-weight: bold;
     text-transform: uppercase;
     font-size: 11px; 
+}
+
+.main-nav .nav-sections a p:hover{
+    color: white;
 }
 
 .nav-sections a.auto{
@@ -324,7 +348,7 @@ span.album-description p{
 }
 
 .play-bar input, .volume input{
-  -webkit-appearance: none;
+ 
   width: 50%;
   height: 3px;
   background: #a3a3a3;
@@ -343,6 +367,17 @@ span.album-description p{
 .play-bar input::-webkit-slider-thumb, .volume input::-webkit-slider-thumb{
     opacity: 0;
 }
+
+input#myRange.slider:focus {
+    outline: -webkit-focus-ring-color auto 1px;
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+    outline-width: 0;
+}
+
+
+
+
 
 .play-bar input:hover::-webkit-slider-thumb, .volume input:hover::-webkit-slider-thumb {
     opacity: 1;
@@ -394,7 +429,7 @@ span.album-description p{
         height: 28px;
     }
     .playlist{
-        
+        padding-top: 10px;
         display: block;
     }
 
@@ -421,7 +456,7 @@ span.album-description p{
     .container-flex.col.media.sidebar > a, a.bottom, a.bottom-profile{
         display: flex;
         align-items: center;
-        padding: 15px;
+        padding: 5px 15px;
     }
 
     a span.label{
