@@ -58,6 +58,13 @@ nav a span:hover{
     align-items: center;
 }
 
+.container-flex.col.sidebar.bottom{
+    height: 150px;
+    margin-top: auto;
+}
+
+
+
 .brand-logo i{
     color: white;
     font-size: 27px;
@@ -95,23 +102,19 @@ a span.label.active{
 
 .playlist{
     color: white;
-    height: 200px;
+    padding-right: 20px;
     padding-left: 35px;
     display: none;
-    overflow-y: auto;
-}
-
-.playlist .create{
-
+    overflow-y: auto;        
 }
 
 .playlist .create i{
+    
     font-size: 40px;
     padding-right: 10px;
 }
 
 .playlist .create a{
-
     display: flex;
     align-items: center;
     color: rgb(118, 120, 125);
@@ -160,7 +163,12 @@ button.upgrade{
     border-radius: 20px;
     color: white;
     padding: 5px 20px;
+    margin-right: 10px;
     font-size: 12px;
+}
+
+.topbar button:hover{
+    transform: scale(1.03);
 }
 
 
@@ -607,6 +615,11 @@ input#myRange.slider:focus {
 /* --------SCROLLBAR-------- */
 
 /* width */
+.playlist::-webkit-scrollbar {
+    
+    width: 4px;
+
+  }
 ::-webkit-scrollbar {
     width: 7px;
 
