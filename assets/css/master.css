@@ -2,7 +2,7 @@
 
 
 
-*{  
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -40,9 +40,9 @@ nav a span:hover{
     z-index: 1;
     width: 48px;
     height: 100vh;
-  
-    background-color: rgb(0, 0, 0);   
-    
+
+    background-color: rgb(0, 0, 0);
+
 }
 
 .container-flex.row.topbar{
@@ -52,7 +52,7 @@ nav a span:hover{
     top: 0;
     left: 0 ;
     height: 70px;
-    background-color: rgba(0, 0, 0, 0.95);   
+    background-color: rgba(0, 0, 0, 0.95);
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
@@ -61,7 +61,7 @@ nav a span:hover{
 .brand-logo i{
     color: white;
     font-size: 27px;
-    
+
 }
 
 .brand-logo img{
@@ -95,8 +95,14 @@ a span.label.active{
 
 .playlist{
     color: white;
+    height: 200px;
     padding-left: 35px;
     display: none;
+    overflow-y: auto;
+}
+
+.playlist .create{
+
 }
 
 .playlist .create i{
@@ -105,21 +111,21 @@ a span.label.active{
 }
 
 .playlist .create a{
-   
+
     display: flex;
     align-items: center;
     color: rgb(118, 120, 125);
 }
 
 .playlist .create a:hover{
-    
+
     color: white;
 }
 
 
 .playlist .create ul li{
     list-style: none;
-    
+
 }
 
 .playlist .create ul li a{
@@ -160,11 +166,11 @@ button.upgrade{
 
 .bg-blue{
     background-color: rgb(20, 25, 34);
-    overflow-y: auto;   
+    overflow-y: auto;
     width: 100%;
     margin-top: 70px;
     height: calc(100vh - 160px);
-    
+
 }
 
 .nav-sections{
@@ -188,7 +194,7 @@ button.upgrade{
     color:rgb(118, 120, 125);
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 11px; 
+    font-size: 11px;
 }
 
 .main-nav .nav-sections a p:hover{
@@ -274,7 +280,7 @@ hr.active{
     bottom: 0;
     left: 0 ;
     height: 90px;
-    background-color: #1b1b1b; 
+    background-color: #1b1b1b;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
@@ -293,7 +299,7 @@ hr.active{
     display: flex;
     flex-grow: 1;
     flex-shrink: 1;
-    flex-basis: 100px;    
+    flex-basis: 100px;
 }
 
 .album img{
@@ -343,12 +349,12 @@ span.album-description p{
 }
 
 .play-bar p{
-    color: white; 
+    color: white;
     font-size: 11px;
 }
 
 .play-bar input, .volume input{
- 
+
   width: 50%;
   height: 3px;
   background: #a3a3a3;
@@ -409,7 +415,7 @@ input#myRange.slider:focus {
 
 @media all and (min-width: 768px){
     .container-flex.col.sidebar{
-        width: 250px;   
+        width: 250px;
     }
 
     .container-flex.col.media{
@@ -462,7 +468,7 @@ input#myRange.slider:focus {
     a span.label{
         display: block;
         margin-left: 10px;
-       
+
     }
 
     .nav-sections{
@@ -475,7 +481,7 @@ input#myRange.slider:focus {
     }
 
     .main-nav .nav-sections a p{
-        font-size: 14px; 
+        font-size: 14px;
     }
 
     .recently-played{
@@ -484,7 +490,7 @@ input#myRange.slider:focus {
 
     .album-content{
         max-width: 521px;
-       
+
     }
 
     .album-card img{
@@ -536,7 +542,7 @@ input#myRange.slider:focus {
         height: 150px;
     }
 
- 
+
 }
 
 @media all and (min-width: 1163px){
@@ -559,7 +565,7 @@ input#myRange.slider:focus {
         height: 150px;
     }
 
- 
+
 }
 
 /* --------UTILITY-------- */
@@ -603,21 +609,21 @@ input#myRange.slider:focus {
 /* width */
 ::-webkit-scrollbar {
     width: 7px;
-    
+
   }
-  
+
   /* Track */
   ::-webkit-scrollbar-track {
-    background: transparent; 
+    background: transparent;
   }
-   
+
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: rgba(124, 124, 124, 0.829); 
+    background: rgba(124, 124, 124, 0.829);
     border-radius: 10px;
   }
-  
+
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: #555;
   }
